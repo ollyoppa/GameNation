@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Top-Up Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Game Currency Top-Up</h1>
+        <form id="topUpForm">
+            <label for="userId">Enter Game User ID:</label>
+            <input type="text" id="userId" name="userId" placeholder="e.g., 123456789" required>
+
+            <label for="amount">Select Top-Up Amount:</label>
+            <select id="amount" name="amount" required>
+                <option value="" disabled selected>Choose an amount...</option>
+                <option value="100">100 Gems ($5)</option>
+                <option value="500">500 Gems ($20)</option>
+                <option value="1000">1000 Gems ($40)</option>
+            </select>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
